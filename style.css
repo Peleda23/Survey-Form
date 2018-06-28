@@ -1,9 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 #survey-form {
-  width: 900px;
+  max-width: 800px;
   margin:40px auto;
-  text-align: center;
+  border: 1px solid whitesmoke;
+  background: rgb(166, 214, 234);
 }
 
 header {
   text-align: center;
+}
+
+body {
+  margin: 0;
+  background: rgb(208, 228, 237);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#btn {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#submit {
+  padding: 0.5rem 2rem;
+  border:  1px solid #ccc;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+#submit:hover { 
+  background: #f4f4f4;
+} 
+/* Name.... */
+
+#name, #email, #number, #dropdown, #radio, #check, #textarea {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+#name-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#name-input {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#name-input input[type="text"] {
+  width: 60%;
+  height: 30px;
+}
+
+#email-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#email-input {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#email-input input[type="email"] {
+  width: 60%;
+  height: 30px;
+}
+
+#number-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#number-input {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#number-input input[type="number"] {
+  width: 60%;
+  height: 30px;
+}
+
+/* Dropdown meniu */
+
+  #dropdown { 
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}  
+
+#dropdown-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#dropdown-meniu {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#dropdown select {
+  width: 60%;
+  height: 30px;
+}
+
+/* Radiobuttons */
+
+#radio-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#radio-btn {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#check-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#check-box {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#textarea-label {
+  flex: 1;
+  text-align: end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#textarea-text {
+  flex: 1;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+} 
+
+#textarea-text textarea {
+  width: 60%;
+}
+
+@media(max-width: 768px) {
+  #name, #email, #number, #dropdown, #radio, #check, #textarea {
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
+
+  #name-label, #email-label, #number-label, #dropdown-label, #radio-label, #check-label, #textarea-label {
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+  }
+
+  #name-input, #email-input, #number-input, #dropdown-meniu, #radio-btn, #check-box, #textarea-text {
+    text-align: center; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
