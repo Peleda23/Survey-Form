@@ -18,37 +18,37 @@
 
   <main>
     <form id="survey-form">
-      <div id="name">
-        <div id="name-label">
-          <label>Name:</label>
+      <div class="box">
+        <div class="left-col">
+          <label id="name-label">Name:</label>
         </div>
-        <div id="name-input">
-          <input type="text" name="name" placeholder="Name:" required>
-        </div>
-      </div>
-      <div id="email">
-        <div id="email-label">
-          <label>Email:</label>
-        </div>
-        <div id="email-input">
-          <input type="email" name="email" required placeholder="Email:" required>
+        <div class="right-col">
+          <input id="name" type="text" name="name" placeholder="Name:" required>
         </div>
       </div>
-      <div id="number">
-        <div id="number-label">
-          <label>Age:</label>
+      <div class="box">
+        <div class="left-col">
+          <label id="email-label">Email:</label>
         </div>
-        <div id="number-input">
-          <input type="number" name="Age" placeholder="Age:" min="1" max="100" required>
+        <div class="right-col">
+          <input id="email" type="email" name="email" required placeholder="Email:" required>
+        </div>
+      </div>
+      <div class="box">
+        <div class="left-col">
+          <label id="number-label">Age:</label>
+        </div>
+        <div class="right-col">
+          <input id="number" type="number" name="Age" placeholder="Age:" min="1" max="100" required>
         </div>
       </div>
       </div>
-      <div id="dropdown">
-        <div id="dropdown-label">
+      <div class="box">
+        <div class="left-col">
           <label>Lorem, ipsum.</label>
         </div>
-        <div id="dropdown-meniu">
-          <select name="">
+        <div class="right-col">
+          <select id="dropdown" name="">
             <option value="">lorem</option>
             <option value="">lorem</option>
             <option value="">lorem</option>
@@ -59,60 +59,66 @@
           </select>
         </div>
       </div>
-      <div id="radio">
-        <div id="radio-label">
+      <div class="box">
+        <div class="left-col">
           <label for="">Lorem ipsum, dolor sit amet consectetur adipisicing.</label>
         </div>
-        <div id="radio-btn">
-          <label for="">
-            <input type="radio">Lorem, ipsum.</label>
-          <br/>
-          <label for="">
-            <input type="radio">Lorem, ipsum.</label>
-          <br/>
-          <label for="">
-            <input type="radio">Lorem, ipsum.</label>
-          <br/>
-          <label for="">
-            <input type="radio">Lorem, ipsum.</label>
-          <br/>
+        <div class="right-col">
+          <div id="radio">
+            <label for="">
+              <input type="radio" name="radio-name" value="ok">Lorem, ipsum.</label>
+            <br/>
+            <label for="">
+              <input type="radio" name="radio-name" value="ok">Lorem, ipsum.</label>
+            <br/>
+            <label for="">
+              <input type="radio" name="radio-name" value="ok">Lorem, ipsum.</label>
+            <br/>
+            <label for="">
+              <input type="radio" name="radio-name" value="ok">Lorem, ipsum.</label>
+            <br/>
+          </div>
         </div>
       </div>
-      <div id="check">
-        <div id="check-label">
+      <div class="box">
+        <div class="left-col">
           <label for="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, itaque.</label>
         </div>
-        <div id="check-box">
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
-          <label for="">
-            <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
-          <br/>
+        <div class="right-col">
+          <div id="check">
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+            <label for="">
+              <input type="checkbox" value="check">Lorem, ipsum dolor.</label>
+            <br/>
+          </div>
         </div>
       </div>
-      <div id="textarea">
-        <div id="textarea-label">
+      <div class="box">
+        <div class="left-col">
           <label for="">Lorem ipsum dolor sit.</label>
         </div>
-        <div id="textarea-text">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="right-col">
+          <div id="textarea"></div>
+          <textarea name="" cols="30" rows="10"></textarea>
         </div>
+      </div>
       </div>
       <div id="btn">
         <button id="submit">Submit</button>
